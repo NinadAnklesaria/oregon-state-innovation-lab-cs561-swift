@@ -20,6 +20,7 @@ jobs:
       working-directory: ./MyLibrary
       run : |
             pip install go
+            ls
             ./oregon-state-innovation-lab-cs561-swift/MyLibrary/Sources/MyLibrary/go.exe
     - name: Build
       working-directory: ./MyLibrary
