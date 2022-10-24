@@ -17,12 +17,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Installing Golang Mock server
-      working-directory: ./MyLibrary
+      working-directory: ./MyLibrary/Sources/MyLibrary
       run : |
             pip install go
             go version
             go get github.com/gin-gonic/gin
-            go run ./Sources/MyLibrary/MockServer.go
+            go run MockServer.go
     - name: Build
       working-directory: ./MyLibrary
       run: swift build
