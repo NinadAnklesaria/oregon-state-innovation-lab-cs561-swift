@@ -21,6 +21,7 @@ jobs:
       run : |
             pip install go
             go version
+            go get github.com/gin-gonic/gin
             go run ./Sources/MyLibrary/MockServer.go
     - name: Build
       working-directory: ./MyLibrary
