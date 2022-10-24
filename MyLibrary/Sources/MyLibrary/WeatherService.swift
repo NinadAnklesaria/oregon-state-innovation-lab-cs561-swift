@@ -6,7 +6,7 @@ public protocol WeatherService {
 
 enum BaseUrl :String {
     case openweathermapApi = "https://api.openweathermap.org/data/2.5/weather"
-    case mockServer = "http://localhost:8000/data/2.5/weather"
+    case mockServer = "http://localhost:8080/data/2.5/weather"
 }
 
 class WeatherServiceImpl: WeatherService {
