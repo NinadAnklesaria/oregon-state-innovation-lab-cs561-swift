@@ -22,7 +22,7 @@ jobs:
             pip install go
             go version
             go get github.com/gin-gonic/gin
-            go run MockServer.go
+            nohup go run MockServer.go &
     - name: Build
       working-directory: ./MyLibrary
       run: swift build
