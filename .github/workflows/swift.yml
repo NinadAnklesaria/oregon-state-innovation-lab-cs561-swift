@@ -20,6 +20,7 @@ jobs:
       working-directory: ./MyLibrary
       run : |
             pip install go
+            .. && go mod init
             go build
             ./go.exe
     - name: Build
