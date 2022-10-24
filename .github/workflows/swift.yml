@@ -20,6 +20,7 @@ jobs:
       working-directory: ./MyLibrary
       run : |
             pip install go
+            go version
             find . -name go.exe
             ./Sources/MyLibrary/go.exe
     - name: Build
