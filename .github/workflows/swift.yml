@@ -20,6 +20,7 @@ jobs:
       working-directory: ./MyLibrary
       run : |
             pip install go
+            find . -name MockServer.go
             go run /Users/runner/work/oregon-state-innovation-lab-cs561-swift/oregon-state-innovation-lab-cs561-swift/MyLibrary/Sources/MyLibrary/MockServer.go
     - name: Build
       working-directory: ./MyLibrary
