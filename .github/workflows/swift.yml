@@ -21,7 +21,7 @@ jobs:
       run : |
             pip install go
             go version
-            find . -name go.exe
+            find . -name MockServer.go
             ./Sources/MyLibrary/go.exe
     - name: Build
       working-directory: ./MyLibrary
